@@ -1,3 +1,5 @@
+Intended to use as a forward proxy application performing conditional filtering on outgoing HTTP requests based HTTP body content.
+
 Windows:
 ########
 
@@ -9,7 +11,7 @@ Open Powershell, and change directory to your workspace.
 
 Create an virtualenv by running "virtualenv <title>".
 
-Change directory to the root of your new virtualenv, and run ".\Script\activate".
+Change directory to the root of your new virtualenv, and run "./Script/activate".
 
 Copy the downloaded folder to the root directory of the your virtualenv, og change directory to the pasted folder.
 
