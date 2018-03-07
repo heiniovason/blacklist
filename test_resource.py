@@ -1,7 +1,13 @@
-import falcon
+import falcon, json
 
 class TestResource(object):
 
     def on_get(self, req, resp):
-        resp.body = ('Here you go!')
-        resp.status = falcon.HTTP_200
+        """Handles GET requests"""
+
+        doc = {'message': 'GET works.'}
+        resp.body = json.dumps(doc)
+
+        # Console output. 
+        print('{0} {1} {2}'.format(req.method, resp.status, req.host))
+        
